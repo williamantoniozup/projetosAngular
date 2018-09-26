@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';   //importanto o módulo da biblioteca do angular2, do pacote do core;
+import { Component }
+ from '@angular/core';   //importanto o módulo da biblioteca do angular2, do pacote do core;
 
 @Component({
     selector: 'meu-primeiro-component',
@@ -11,7 +12,7 @@ export class MeuPrimeiroComponent {}
 
 
 /*
-    selector ->  nome da tag HTML que queremos criar para utilizar o component
+    selector ->  nome da tag HTML que queremos criar para utilizar o componenb
     template -> precisamos de um template HTML
 
     export para expor a classe;

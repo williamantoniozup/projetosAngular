@@ -1,4 +1,3 @@
-import { CursosModule } from './cursos/cursos.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +19,11 @@ import {CursosModule} from './cursos/cursos.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    CursosModule
+    CursosModule 
+    /*com esse modulo 'CursosModule' importado aqui, td que estiver dentro do 'exports' do cursos.module.ts consigo 
+      utilizar nos componentes que estão declarados no 'declarations' do app.module.ts
+    
+    */
   ],
 
   providers: [],
