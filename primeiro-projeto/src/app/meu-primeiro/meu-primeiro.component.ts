@@ -6,6 +6,10 @@ import { Component }
     template: `
         <p>Meu primeiro component com Angular 2!</p> 
     `
+    /* esse formato do template usando 'template string'
+    só devo usar se tiver no máximo 3 linhas
+    
+    */
 }) //falando pro angular que essa classe é um componente do angular, pro transpiler (decorator), passamos metadados para esse component.
 
 export class MeuPrimeiroComponent {}
