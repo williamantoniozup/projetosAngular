@@ -29,6 +29,18 @@ export class DataBindingComponent implements OnInit {
 
   isMouseOver: boolean = false;
 
+  nome: string = 'abc';
+
+  pessoa: any = {
+    nome: null,
+    idade: null,
+    end: {
+      rua: null,
+      bairro: null
+    }
+
+  }
+
   constructor() { }
 
   ngOnInit() {

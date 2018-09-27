@@ -57,7 +57,7 @@
 </section> -->
 
 
-<section class="event-binding">
+<!-- <section class="event-binding">
 
   <article>
     <h3>Event Binding</h3>
@@ -72,11 +72,11 @@
       <input type="text" (keyup)="onKeyUp($event)" 
         (keyup.enter)="salvarValor(campoInput.value)" 
         (blur)="salvarValor(campoInput.value)" 
-        #campoInput >
+        #campoInput/>
 
       <br><br><br>
-      <p>Valor atual --> {{ valorAtual }}</p>
-      <p>Valor salvo --> {{ valorSalvo }}</p>
+      <p>Valor atual: {{ valorAtual }}</p>
+      <p>Valor salvo: {{ valorSalvo }}</p>
 
       <br>
 
@@ -90,13 +90,82 @@
     </div>
   </article>
 
-</section>
+</section> -->
+
+
+<!-- <section class="two-way-binding">
+  <article>
+
+    <h3>Two-Way Data-Binding</h3>
+    <br><br>
+    <div>
+
+
+      <input type="text" 
+        [value]="nome" 
+        (input)="nome = $event.target.value" 
+      />
+    
+      <input type="text" 
+        [ngModel]="nome" 
+        (ngModelChange)="nome = $event" 
+      />
+
+      <input type="text" [(ngModel)]="nome">
+
+      <p>Voce digitou um nome: {{ nome }}</p>
+
+    </div>
+    <br>
+    <div>
+      <input type="text" placeholder="Digite seu nome" [(ngModel)]="pessoa.nome">
+      <input type="text" placeholder="Digite sua idade" [(ngModel)]="pessoa.idade">
+      <br>
+      <input type="text" placeholder="Rua" [(ngModel)]="pessoa.end.rua">
+      <input type="text" placeholder="Bairro" [(ngModel)]="pessoa.end.bairro">
+      <p>Nome da pessoa: {{ pessoa.nome}} e idade: {{pessoa.idade}}</p>
+      <p>{{pessoa.nome}} mora na Rua:{{ pessoa.end.rua}}, Bairro: {{pessoa.end.bairro}}</p>
+
+    </div>
+
+  </article>
+
+</section> -->
+
+<app-meu-form></app-meu-form>
 <!-- 
 (keyup.enter)="salvarValor($event.target.value)" ou
 (keyup.enter)="salvarValor(campoInput.value)"
 
 
-isto (click)="botaoClicado()" por debaixo dos panos é isso:
-on-click="botaoClicado()"
+  PROPERTY BINDING
+ <input type="text" 
+    [value]="nome" 
+    (input)="nome = $event.target.value" 
+  />
+
+  EVENT BINDING
+  <input type="text" 
+    [ngModel]="nome" 
+    (ngModelChange)="nome = $event" 
+  />
+
+  TWO-DATA BINDING - Sintaxe Banana na caixa [()]
+  <input type="text" [(ngModel)]="nome">
+
+
+  Property-binding
+    <img [src]="urlImage" alt="property binding"> 
+    <img bind-src="urlImage">
+
+  Event-Binding
+    isto (click)="botaoClicado()" por debaixo dos panos é isso:
+    on-click="botaoClicado()"
+  
+  Two-Data Binding
+    <input type="text" [(ngModel)]="nome">
+    <input type="text" bindon-ngModel="nome">
+
+
 
  -->
