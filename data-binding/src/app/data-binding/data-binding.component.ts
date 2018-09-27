@@ -32,7 +32,7 @@ export class DataBindingComponent implements OnInit {
   nome: string = 'abc';
   
   nomeDoCurso: string = 'Angular';
-  // nomeTesteIn: string = '';
+  valorInicial: number = 10;
 
   pessoa: any = {
     nome: null,
@@ -73,5 +73,9 @@ export class DataBindingComponent implements OnInit {
 
   onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver; // nega o valor, coloca mouse fica true, tira o mouse fica false again
+  }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
   }
 }

@@ -139,7 +139,9 @@
   <article>
     <h3>Input/Output Properties</h3>
     <app-curso [nome]="nomeDoCurso"></app-curso>
-    <contador></contador>
+    <contador [valor]="valorInicial"
+      (mudouValor)="onMudouValor($event)"
+    ></contador>
 
   </article>
 
@@ -182,6 +184,7 @@
     <input type="text" [(ngModel)]="nome">
     <input type="text" bindon-ngModel="nome">
 
-
+  HARD CODE desse modo:
+    <contador valor="10"></contador>
 
  -->
