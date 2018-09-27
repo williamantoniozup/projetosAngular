@@ -132,7 +132,24 @@
 
 </section> -->
 
-<app-meu-form></app-meu-form>
+<!-- <app-meu-form></app-meu-form>   ESSE CARA TA CONSTRUÍDO DENTRO MEU-FORM-COMPONENT.HTML-->
+
+<section class="input-output-properties">
+
+  <article>
+    <h3>Input/Output Properties</h3>
+    <app-curso 
+      [nome]="nomeDoCurso"
+    ></app-curso>
+
+  </article>
+
+
+</section>
+
+
+
+
 <!-- 
 (keyup.enter)="salvarValor($event.target.value)" ou
 (keyup.enter)="salvarValor(campoInput.value)"
