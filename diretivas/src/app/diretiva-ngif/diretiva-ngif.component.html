@@ -3,9 +3,11 @@
 <div *ngIf="cursos.length > 0" >
   Lista de cursos aqui:
 </div>
-<div *ngFor="let curso of cursos" >
+<div>
   <ul>
-    <li>{{curso}}</li>
+    <li *ngFor="let curso of cursos" >
+      {{ curso }}
+    </li>
   </ul>
 </div>
 <div *ngIf="cursos.length == 0" >
@@ -14,16 +16,31 @@
 
 <br>
 <button (click)="onMostrarMsg()">Mostrar ou esconder</button>
-<br><br>
+<br>
 <div *ngIf="mostrarMsg">
   Olha eu aqui!
 </div>
-
+<br>
 <h5>Hidden como alternativa</h5>
 <button (click)="onMostrarMsg()">Mostrar ou esconder</button>
-<br><br>
+<br>  
 <div [hidden]="!mostrarMsg">
   Olha eu aqui!
 </div>
 <br>
 
+<h5>Aula 28 - Removendo o * e usando template</h5>
+
+<div *ngIf="mostrarMsg" >
+    
+</div>
+
+<!-- traduzindo essa diretiva ngIf -->
+
+<ng-template [ngIf]="mostrarMsg" >
+  <div>Lista de cursos aqui.</div>
+</ng-template>
+
+<div template="ngIf mostrarMsg">
+  Lista de cursos aqui.
+</div>
