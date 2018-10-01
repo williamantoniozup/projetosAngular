@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgifComponent implements OnInit {
 
+  cursos: string[] = ["Angular 6","NodeJS","React"];
+
+  mostrarMsg: boolean = true;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+  onMostrarMsg(){
+    this.mostrarMsg = !this.mostrarMsg;
+  }
 }
