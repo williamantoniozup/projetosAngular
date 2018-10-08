@@ -19,6 +19,12 @@ describe('DiretivaNgstyleComponent', () => {
     fixture.detectChanges();
   });
 
+  // it(`should  have as title 'apps works!'`,async(()=>{
+  //   const fixture = TestBed.createComponent(DiretivaNgstyleComponent);
+  //   const app = fixture.debugElement.componentInstance;
+  //   expect(app.title).toEqual('apps!');
+  // }));
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });

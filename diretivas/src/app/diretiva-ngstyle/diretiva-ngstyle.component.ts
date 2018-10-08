@@ -5,11 +5,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './diretiva-ngstyle.component.html',
   styleUrls: ['./diretiva-ngstyle.component.css']
 })
-export class DiretivaNgstyleComponent implements OnInit {
+export class DiretivaNgstyleComponent implements OnInit{
+
+  ativo: boolean = false;
+  tamanhoFonte: number = 10;
+
+  // title = 'apps works!';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  mudarAtivo(){
+    this.ativo = !this.ativo;
   }
 
 }
