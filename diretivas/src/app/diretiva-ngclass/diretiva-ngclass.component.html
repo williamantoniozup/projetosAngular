@@ -1,8 +1,7 @@
 <h1>
-  <i class="fas fa-star"></i>
-  <i class="far fa-star"></i>
-  <i class="star"
-  [class.fa]
-  ></i>
-
+  <i class="glyphicon" 
+    [class.glyphicon-star-empty]="!meuFavorito"
+    [class.glyphicon-star]="meuFavorito"
+    (click)="onClick()"
+    ></i>
 </h1>
